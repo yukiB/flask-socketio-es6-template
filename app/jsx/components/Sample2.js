@@ -1,6 +1,5 @@
 import React from 'react'
 import Chart from './chart/Chart'
-import Coffee from './img/Coffee'
 import {LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend} from 'recharts';
 
 let namespace = '/sample';
@@ -10,7 +9,7 @@ export default class Sample2 extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            data: [{name: 0, data1: 9.697382446695155, data2: 2.3434}],
+            data: [...Array(30).keys()].map((d)=> {return {name: 0, data1: 9.697382446695155, data2: 2.3434}}),
             start: null
         };
     }

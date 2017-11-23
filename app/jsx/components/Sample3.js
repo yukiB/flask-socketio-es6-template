@@ -1,6 +1,5 @@
 import React from 'react'
 import Chart from './chart/Chart'
-import Coffee from './img/Coffee'
 import {BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend} from 'recharts';
 
 let namespace = '/sample';
